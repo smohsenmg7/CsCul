@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <!--FMaghami:
+    Design very basic Layout for Calculator:
+
+    Design 10 button for Numbers on calculator>>ID: button0, button1, button2, ..., button9
+    Design a button for Point in numbers like 5.4 or 2.55 (.)>>     ID: buttonPoint
+    Design a button for Addiction(+)        >>    ID: buttonAddiction
+    Design a button for Subtraction (-)    >>     ID: buttonSubtraction
+    Design a button for Multiplication(*) >>      ID: buttonMultiplication
+    Design a button for Division(/)        >>      ID: buttonDivision
+    Design a button for Equal(=)        >>          ID: buttonEqual
+    Design a button for Clear (C)         >>     ID: buttonClear
+    Design an EditText on top of layout for showing numbers and function>> ID: editTextView
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2">
+
+        <TextView
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="48sp"
+            android:gravity="end|bottom"
+            android:padding="2dp" />
+
+    </LinearLayout>
+
+    <View style="@style/SeparateLineHorizontal" />
+
+    <!--Buttons-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <!--COL_1-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mc_button"
+                style="@style/RegularButtonGreyText"
+                android:text="@string/mc" />
+
+            <View style="@style/SeparateLineHorizontal" />
+
+            <TextView
+                android:id="@+id/clean_button"
+                style="@style/RegularButtonBlueText"
+                android:text="@string/clean_sign" />
+
+            <View style="@style/SeparateLineHorizontal" />
+
+            <TextView
+                android:id="@+id/number7_button"
+                style="@style/RegularButtonBlackText"
+                android:text="@string/number7" />
+
+            <View style="@style/SeparateLineHorizontal" />
+
+            <TextView
+                android:id="@+id/number4_button"
+                style="@style/RegularButtonBlackText"
+                android:text="@string/number4" />
+
+            <View style="@style/SeparateLineHorizontal" />
+
+            <TextView
+                android:id="@+id/number1_button"
+                style="@style/RegularButtonBlackText"
+                android:text="@string/number1" />
+
+            <View style="@style/SeparateLineHorizontal" />
+
+            <TextView
+                android:id="@+id/percent_sign"
+                style="@style/RegularButtonBlackText"
+                android:text="@string/percent_sign" />
+
+        </LinearLayout>
+
+        <View style="@style/SeparateLineVertical" />
+
+        <!--COL_2-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mPlus_button"
+                style="@style/RegularButtonGreyText"
+                android:text="@string/mPlus" />
+
+            <View style="@style/SeparateLineHorizontal" />
+
+            <TextView
+                android:id="@+id/division_button"
+                style="@style/RegularButtonBlueText"
+                android:text="@string/division_sign" />
+
+            <View style="@style/SeparateLineHorizontal" />
+
+            <TextView
+                android:id="@+id/number8_button"
+                style="@style/RegularButtonBlackText"
+                android:text="@string/number8" />
+
+            <View style="@style/SeparateLineHorizontal" />
+
+            <TextView
+                android:id="@+id/number5_button"
+                style="@style/RegularButtonBlackText"
+                android:text="@string/number5" />
+
+            <View style="@style/SeparateLineHorizontal" />
+
+            <TextView
+                android:id="@+id/number2_button"
+                style="@style/RegularButtonBlackText"
+                android:text="@string/number2" />
+
+            <View style="@style/SeparateLineHorizontal" />
+
+            <TextView
+                android:id="@+id/zero_button"
+                style="@style/RegularButtonBlackText"
+                android:text="@string/zero_sign" />
+
+        </LinearLayout>
+
+        <View style="@style/SeparateLineVertical" />
+
+        <!--COL_3-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mMinus_button"
+                style="@style/RegularButtonGreyText"
+                android:text="@string/mMinus" />
+
+            <View style="@style/SeparateLineHorizontal" />
+
+            <TextView
+                android:id="@+id/multiple_button"
+                style="@style/RegularButtonBlueText"
+                android:text="@string/multiple" />
+
+            <View style="@style/SeparateLineHorizontal" />
+
+            <TextView
+                android:id="@+id/number9_button"
+                style="@style/RegularButtonBlackText"
+                android:text="@string/number9" />
+
+            <View style="@style/SeparateLineHorizontal" />
+
+            <TextView
+                android:id="@+id/number6_button"
+                style="@style/RegularButtonBlackText"
+                android:text="@string/number6" />
+
+            <View style="@style/SeparateLineHorizontal" />
+
+            <TextView
+                android:id="@+id/number3_button"
+                style="@style/RegularButtonBlackText"
+                android:text="@string/number3" />
+
+            <View style="@style/SeparateLineHorizontal" />
+
+            <TextView
+                android:id="@+id/point_button"
+                style="@style/RegularButtonBlackText"
+                android:text="@string/point" />
+
+        </LinearLayout>
+
+        <!--COL_4 : have 2 linear layout that each contain ConstraintLayout-->
+
+        <!--COL_4_MainLayout-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!--COL_4_Child(1)LinearLayout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/column_4_buttons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mr"
+                            style="@style/RegularButtonGreyText"
+                            android:text="@string/mr" />
+
+                        <View style="@style/SeparateLineHorizontal" />
+
+                        <TextView
+                            android:id="@+id/del"
+                            style="@style/RegularButtonBlueText"
+                            android:text="@string/del" />
+
+                        <View style="@style/SeparateLineHorizontal" />
+
+                        <TextView
+                            android:id="@+id/minus"
+                            style="@style/RegularButtonBlueText"
+                            android:text="@string/minus" />
+
+                        <View style="@style/SeparateLineHorizontal" />
+
+                        <TextView
+                            android:id="@+id/plus"
+                            style="@style/RegularButtonBlueText"
+                            android:text="@string/plus" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#eeeeee"
+                        app:layout_constraintLeft_toLeftOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+            <!--Equal Button - COL_4_Child(1)LinearLayout -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/equal"
+                        style="@style/EqualButton"
+                        android:text="@string/EqualSign" />
+
+                    <!--SeparateLine for Left of Equal Button-->
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#f5f5f5"
+                        app:layout_constraintLeft_toLeftOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/SeparateLineHorizontal" />
+
+</LinearLayout>
