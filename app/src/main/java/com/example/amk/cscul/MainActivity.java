@@ -4,7 +4,7 @@
  *      1 - if ( TempVariable == "" )
  *          prevent from axcecuting operator !!!
  *
- *      2 -
+ *      2 - Delete  Button 
  */
 
 package com.example.amk.cscul;
